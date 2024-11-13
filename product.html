@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+            
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="sticky top-0 z-20 flex items-center justify-between p-3 bg-green-100 shadow-xl">
+        <h1 class="text-2xl">Greenden</h1>
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6 sm:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class="hidden gap-3 0flex t sm:flex">
+            <li><a class="hover:uppercase hover:text-green-800" href="tail.html">Home</a></li>
+            <li><a class="hover:uppercase hover:text-green-800" href="product.html">Product</a></li>
+            <li><a class="hover:uppercase hover:text-green-800" href="contact.html">Contact</a></li>
+
+        </ul>
+    </nav>
+
+    <section id="sidenav" class="fixed top-0 z-40 transition-all duration-1000 bg-green-100 "
+        style="width: 50%; height: 100vh; right: -50%;">
+        <div class="p-5 text-right">
+            <p id="close-nav" class="inline cursor-pointer">X</p>
+
+        </div>
+        <ul class="flex flex-col items-center gap-10 0flex t">
+            <li><a class="hover:uppercase hover:text-green-800" href="tail.html">Home</a></li>
+            <li><a class="hover:uppercase hover:text-green-800" href="product.html">Product</a></li>
+            <li><a class="hover:uppercase hover:text-green-800" href="contact.html">Contact</a></li>
+
+        </ul>
+    </section>
+    <section class="p-4 text-center">
+        <h1 class="mt-5 text-3xl font-bold ">SEARCH YOUR PRODUCT</h1>
+        <input type="text" placeholder="TYPE YOUR PRODUCT" class="p-3 m-4 border border-black pl" style="width: 80%; text-align: center;">
+        <div class="grid grid-cols-2 gap-6 mt-5 md:grid-cols-4">
+            <div class="transform hover:shadow-xl hover:-translate-y-2">
+                <img src="./image/BS-1.png" class="inline">
+                <h1>Rose Plant</h1>
+                <p>$20</p>
+            </div>
+            <div class="transform hover:shadow-xl hover:-translate-y-2">
+                <img src="./image/BS-2.png" class="inline" alt="">
+                <h1>illy Plant</h1>
+                <p>$20</p>
+            </div>
+            <div class="transform hover:shadow-xl hover:-translate-y-2">
+                <img src="./image/BS-3.png" class="inline" alt="">
+                <h1>lotus Plant</h1>
+                <p>$20</p>
+            </div>
+            <div class="transform hover:shadow-xl hover:-translate-y-2">
+                <img src="./image/BS-4.png" class="inline" alt="">
+                <h1>money Plant</h1>
+                <p>$20</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-6 mt-5 md:grid-cols-4">
+            <div class="transform hover:shadow-xl hover:-translate-y-2">
+                <img src="./image/BS-1.png" class="inline">
+                <h1>wonderful Plant</h1>
+                <p>$20</p>
+            </div>
+            <div class="transform hover:shadow-xl hover:-translate-y-2">
+                <img src="./image/BS-2.png" class="inline" alt="">
+                <h1>best Plant</h1>
+                <p>$20</p>
+            </div>
+            <div class="transform hover:shadow-xl hover:-translate-y-2">
+                <img src="./image/BS-3.png" class="inline" alt="">
+                <h1>beauty Plant</h1>
+                <p>$20</p>
+            </div>
+            <div class="transform hover:shadow-xl hover:-translate-y-2">
+                <img src="./image/BS-4.png" class="inline" alt="">
+                <h1>dangous Plant</h1>
+                <p>$20</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-6 mt-5 md:grid-cols-4">
+            <div class="transform hover:shadow-xl hover:-translate-y-2">
+                <img src="./image/BS-1.png" class="inline">
+                <h1> black Rose Plant</h1>
+                <p>$20</p>
+            </div>
+            <div class="transform hover:shadow-xl hover:-translate-y-2">
+                <img src="./image/BS-2.png" class="inline" alt="">
+                <h1> white rose Plant</h1>
+                <p>$20</p>
+            </div>
+            <div class="transform hover:shadow-xl hover:-translate-y-2">
+                <img src="./image/BS-3.png" class="inline" alt="">
+                <h1>hibiscas Plant</h1>
+                <p>$20</p>
+            </div>
+            <div class="transform hover:shadow-xl hover:-translate-y-2">
+                <img src="./image/BS-4.png" class="inline" alt="">
+                <h1> sunflower Plant</h1>
+                <p>$20</p>
+            </div>
+        </div>
+    </section>
+ 
+    <section class="p-10 bg-green-100 ">
+        <h1 class="text-4xl font-bold ">Greenden</h1>
+        <p class="mt-2">The standard chunk of Lorem, ipsum dolor sit amet consectetur adipisicing elit. ae excepturi
+            velit ad tempora, nulla, quod dignissimos ullam!</p>
+        <p class="mt-2">@2024 Greenden.com</p>
+    </section>
+    
+    <script src="index.js"></script>
+</body>
+
+</html>
